@@ -1,0 +1,19 @@
+int add (int a, int b){
+  return (a + b);
+}
+
+int addPtr (int* ptr, int val) {
+  (*ptr) = ((*ptr) + val);
+  return (*ptr);
+}
+
+test {
+  int x = 3;
+  int* px = &x;       // px pointe sur x
+  int y = addPtr(px, 2);
+  // Après l'appel, x vaut 5, y vaut 5
+
+  print x;  // Doit afficher 5
+  print y;  // Doit afficher 5
+}
+

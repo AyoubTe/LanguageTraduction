@@ -1,0 +1,14 @@
+int setPointer (int* p, int value) {
+  (*p) = value;
+  return (*p);
+}
+
+test {
+  int* p = (new int);
+  int res = setPointer(p, 42);
+  print (*p); // Doit afficher 42
+  
+  p = null;   // Le pointeur ne pointe plus sur rien
+
+}
+

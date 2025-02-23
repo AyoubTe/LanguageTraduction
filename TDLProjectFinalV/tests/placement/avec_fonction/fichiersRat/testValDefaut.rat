@@ -1,0 +1,14 @@
+int adder(int a, int b=7) {
+  static int counter = 0;   // variable locale statique
+  counter = (counter + 1);
+  return ((a + b) + counter);
+}
+
+main {
+
+  int r2 = adder(1);       // a=1, b=7 => 1 + 7 + 2 = 10
+  print r2;
+
+  int r3 = adder(1, 2);    // a=1, b=2 => 1 + 2 + 3 = 6
+  print r3;
+}

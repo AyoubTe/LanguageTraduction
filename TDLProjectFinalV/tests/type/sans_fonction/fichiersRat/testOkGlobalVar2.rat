@@ -1,0 +1,13 @@
+static rat x = [10/3];
+static bool b = false;
+
+testOkGlobalVar2 {
+  print x;          // Doit afficher 10
+  b = true;
+  if ((b)=(true)) { // Condition : (b = true)
+    x = (x + [5/3]);
+  } else {
+    // rien
+  }
+  print x;          // Doit afficher 11
+}

@@ -1,0 +1,7 @@
+test {
+  int* px = (new int);
+  int x = 10;
+  px = &x;
+  (*px) = 20;          // Modification de la valeur pointée par px
+  print x;             // Doit afficher 20
+}

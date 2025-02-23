@@ -1,0 +1,7 @@
+main {
+  int* px = (new int); // Déclaration et allocation dynamique
+  int x = 42;
+  px = &x;             // Affectation avec une adresse
+  (*px) = 43;            // Déférencement et modification
+  print x;             // Doit afficher 43
+}

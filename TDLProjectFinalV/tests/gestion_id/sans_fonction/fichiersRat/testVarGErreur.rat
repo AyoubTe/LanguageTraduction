@@ -1,0 +1,7 @@
+static int g = 10;
+
+main {
+    int x = g; // Utilisation valide de la variable globale
+    static int a = 10;
+    print x;   // Affiche 10
+}

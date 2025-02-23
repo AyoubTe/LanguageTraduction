@@ -1,0 +1,13 @@
+static int x = 10;
+static bool b = false;
+
+testOkGlobalVar {
+  print x;          // Doit afficher 10
+  b = true;
+  if ((b)=(true)) { // Condition : (b = true)
+    x = (x + 1);
+  } else {
+    // rien
+  }
+  print x;          // Doit afficher 11
+}

@@ -1,0 +1,6 @@
+static int x = 0;
+static int x = 1; // Erreur : double déclaration de x
+
+testErreurGlobalVar {
+  print x;
+}

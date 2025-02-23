@@ -1,0 +1,20 @@
+int* newInt (int value) {
+  int* ptr = (new int);
+  (*ptr) = value;  
+  return ptr;
+}
+
+int incPtr (int* ptr) {
+  (*ptr) = ((*ptr) + 1);
+  return (*ptr);
+}
+
+test {
+
+  int* p = newInt(10);
+  print (*p);      // Doit afficher 10
+  int x = incPtr(p);
+  print (*p);      // Doit afficher 11
+  print x;         // Doit aussi afficher 11
+}
+

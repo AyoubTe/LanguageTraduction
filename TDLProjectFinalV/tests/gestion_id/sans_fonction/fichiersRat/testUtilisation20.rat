@@ -1,0 +1,4 @@
+test {
+  const x = 10;
+  x = 5; // Erreur, x est une constante
+}

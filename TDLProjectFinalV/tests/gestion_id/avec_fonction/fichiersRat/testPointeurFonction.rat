@@ -1,0 +1,13 @@
+int f(int a, int b, int* p){
+    int c = (a + (*p));
+    return (b * b);
+}
+
+
+main {
+    int* p = (new int);
+    (*p) = 10;
+
+    int e = f(5, 4, p);
+    print e;
+}

@@ -1,0 +1,4 @@
+testErreurPointer {
+  int* p = (new int);
+  (*p) = [1/2]; // Erreur : on stocke un Rat ( [1/2] ) dans un int*
+}

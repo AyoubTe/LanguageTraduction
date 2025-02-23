@@ -1,0 +1,7 @@
+testOkPointer {
+  int* p = (new int);
+  (*p) = 42;
+  print (*p);   // Doit afficher 42
+  p = null;     // Le pointeur ne pointe plus sur rien
+}
+

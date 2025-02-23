@@ -1,0 +1,7 @@
+static int g = 10;
+
+main {
+    int x = 5;
+    g = (g + x);
+    print g;
+}

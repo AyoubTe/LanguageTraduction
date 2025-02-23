@@ -1,0 +1,16 @@
+int adder(int a=5, int b=7) {
+  static int counter = 0;   // variable locale statique
+  counter = (counter + 1);
+  return ((a + b) + counter);
+}
+
+testOkStaticAndDefault {
+  int r1 = adder();        // a=5, b=7 => 5 + 7 + 1 = 13
+  print r1;
+
+  int r2 = adder(1);       // a=1, b=7 => 1 + 7 + 2 = 10
+  print r2;
+
+  int r3 = adder(1, 2);    // a=1, b=2 => 1 + 2 + 3 = 6
+  print r3;
+}

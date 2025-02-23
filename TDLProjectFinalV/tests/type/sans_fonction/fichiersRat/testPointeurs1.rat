@@ -1,0 +1,5 @@
+main {
+    int * p = (new int);
+    (*p) = 42; // Affectation valide à l'adresse pointée
+    print (*p); // Affiche 42
+}

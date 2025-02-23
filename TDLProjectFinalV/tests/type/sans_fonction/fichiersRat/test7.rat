@@ -1,0 +1,5 @@
+test {
+  int* px = (new int);
+  (*px) = 42;           // Affectation directe à la zone mémoire allouée
+  print (*px);          // Doit afficher 42
+}

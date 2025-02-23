@@ -1,0 +1,3 @@
+test {
+  (*px) = 5; // Erreur, px n'est pas déclaré
+}

@@ -1,0 +1,19 @@
+int f() {
+    int a = 0;
+    static int c = 0;
+    c = (c + 1);
+    return c;
+}
+
+int g() {
+    static int a = 0;
+}
+
+
+main {
+    int x = f();
+    int b = g();
+    print x;
+    x = f();
+    print x;
+}

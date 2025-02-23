@@ -1,0 +1,11 @@
+test {
+  int* px = (new int);
+  int* py = (new int);
+  int x = 7;
+  int y = 8;
+  px = &x;
+  py = &y;
+  (*px) = ((*px) + (*py)); // Addition des valeurs pointées
+  print (*px);           // Doit afficher 15
+  print (*py);           // Doit afficher 8
+}

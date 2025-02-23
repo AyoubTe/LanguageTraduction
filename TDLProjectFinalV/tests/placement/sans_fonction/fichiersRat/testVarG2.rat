@@ -1,0 +1,10 @@
+// Test simple avec des variables globales et locales
+static int g1 = 5;
+static int g2 = 10;
+
+main {
+
+    int l1 = 2;
+    int l2 = (l1 + g1);
+    print l2;  // Doit afficher 7
+}

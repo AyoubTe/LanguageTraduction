@@ -1,0 +1,6 @@
+test {
+  int* px = (new int); // Allocation dynamique
+  int x = 5;
+  px = &x;             // px pointe sur x
+  int y = (*px);       // Déférencement de px
+}

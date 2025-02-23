@@ -1,0 +1,4 @@
+main {
+    int * p = (new int);
+    bool b = (*p); // Erreur : assignation d'un int à un bool
+}
